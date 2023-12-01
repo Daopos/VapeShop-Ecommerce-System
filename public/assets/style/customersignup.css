@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    background-color: #9B9FC4;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 20px 70px 50px 70px;
+    margin-right: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input[type=text],input[type=password],input[type=tel] {
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    border: solid 1px  #DBDBDB;
+}
+
+form input[type=submit] {
+    padding: 10px ;
+    background-color: #B61EFE;
+    border: none;
+    border-radius: 10px;
+    color: #ffff;
+
+}
+
+.login-container .text-login h1 {
+    font-size: 5em;
+    font-weight: 600;
+    background: linear-gradient(to right, #B61EFE, #00F0FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+
+
+form h1 {
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+h5 {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    gap: 50px;
+}
+
+.two-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.center-btn input {
+    width: 280px;
+    margin-top: 10px;
+}

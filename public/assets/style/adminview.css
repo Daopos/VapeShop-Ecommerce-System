@@ -1,0 +1,40 @@
+.view-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.view {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.item-container {
+    margin-top: 50px;
+    border: 3px solid #9094BE;
+    padding: 26px 80px;
+    border-radius: 20px;
+}
+
+
+.item-container div:nth-of-type(2) {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    word-break: break-word;
+    width: 200px;
+
+}
+
+h3 span, p span {
+    font-weight: 300;
+    color: rgb(131, 126, 126);
+}
+
+p, h3 {
+    font-weight: bold;
+}
+
+

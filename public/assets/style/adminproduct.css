@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.product-container {
+    padding: 30px 50px;
+}
+
+.add-product button {
+    background-color: #25C035;
+    color: #ffff;
+    border: none;
+    padding: 7px 10px;
+    margin-top: 17px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.add-product button a {
+    text-decoration: none;
+    color: white;
+}
+
+.add-product h2 {
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+

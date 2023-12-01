@@ -1,0 +1,43 @@
+
+
+.vape-container {
+    padding: 80px 100px;
+}
+
+
+.item-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    row-gap: 20px;
+    column-gap: 15px;
+}
+
+.item-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.item {
+    border: 5px solid #9094BE;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.05);
+  }
+
+.item h3 {
+    margin-top: 10px;
+}
+
+.item img {
+    width: 200px;
+}
+
+
+
+
