@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>View</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('/assets/image/top-logo.png')}}" />
     <link rel="stylesheet" href="{{  asset('assets/style/admindashboard.css') }}">
     <link rel="stylesheet" href="{{  asset('assets/style/adminview.css') }}">
 </head>
@@ -25,8 +26,9 @@
                         <p><span>Description:</span> {{ $product->product_description }}</p>
                         <h3><span>Name:</span>{{ $product->product_name }}</h3>
                         <h3><span>Type:</span> {{ $product->product_type }}</h3>
-                        <h3><span>quantity:</span> {{ $product->product_quantity }}</h3>
-                        <h3><span>price:</span> {{ $product->product_price }}</h3>
+                        <h3><span>Quantity:</span> {{ $product->product_quantity }}</h3>
+                        <h3><span>Wholesale Price:</span> {{ $product->product_wholesaleprice }}</h3>
+                        <h3><span>Price:</span> {{ $product->product_price }}</h3>
                     </div>
                 </div>
             </div>

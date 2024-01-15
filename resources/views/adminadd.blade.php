@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Add product</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('/assets/image/top-logo.png')}}" />
     <link rel="stylesheet" href="{{  asset('assets/style/admindashboard.css') }}">
     <link rel="stylesheet" href="{{  asset('assets/style/adminaddproduct.css') }}">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
 </head>
 <body>
     @include('nav')
@@ -15,7 +19,7 @@
             <h1>Add Product</h1>
         </div>
         <div class="form-container">
-            <form method="POST" action="{{ route('addproduct') }}" enctype='multipart/form-data'>
+            <form class="form-class" method="POST" action="{{ route('addproduct') }}" enctype='multipart/form-data'>
                 @csrf
                 <div class="inputss">
                     <div class="column-div">
@@ -36,14 +40,18 @@
                         <input name="product_quantity" type="number" placeholder="product quantity" required>
                     </div>
                     <div class="column-div">
-                        <label for="price">product price</label>
-                        <input name="product_price" type="number" placeholder="product price" required>
+                        <label for="price">product wholesale price</label>
+                        <input name="product_wholesaleprice" type="number" placeholder="product wholesale price" required>
                     </div>
                 </div>
-                <div>
+                <div class="inputss">
+                    <div class="column-div">
+                        <label for="product_retailprice">product retail price</label>
+                        <input  name="product_retailprice" type="number" placeholder="product retail price" required>
+                    </div>
                     <div class="column-div">
                         <label for="product_type">product type</label>
-                        <select name="product_type" id="">
+                        <select style="width: 320px" name="product_type" id="">
                             <option value="vape">VAPE</option>
                             <option value="juice">JUICE</option>
                             <option value="dispo">DISPO</option>
@@ -63,5 +71,17 @@
         </div>
 
     </div>
+
+    @if (session('success'))
+    <script>
+      toastr.success('{{ session('success') }}', 'Success!');
+  </script>
+  @endif
+
+@if (session('error'))
+<script>
+  toastr.error('{{ session('error') }}', 'Error!');
+</script>
+  @endif
 </body>
 </html>

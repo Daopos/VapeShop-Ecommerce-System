@@ -71,13 +71,13 @@ p {
     border: none;
 }
 
-.vape-item div button:nth-of-type(1) {
+.vape-item div form button:nth-of-type(1) {
     border: 3px solid #9094BE;
     background-color: rgba(144, 148, 190, 0.3);
     color: #9094BE;
 }
 
-.vape-item div button:nth-of-type(2) {
+.vape-item div button:nth-of-type(1) {
     background-color: #9094BE;
     color: #363062;
 }

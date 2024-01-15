@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Edit product</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('/assets/image/top-logo.png')}}" />
     <link rel="stylesheet" href="{{  asset('assets/style/admindashboard.css') }}">
     <link rel="stylesheet" href="{{  asset('assets/style/adminaddproduct.css') }}">
 </head>
@@ -15,7 +16,7 @@
             <h1>Edit Product</h1>
         </div>
         <div class="form-container">
-            <form method="POST" action="{{ route('editproduct', ['id' => $product->id]) }}" enctype='multipart/form-data'>
+            <form class="form-class" method="POST" action="{{ route('editproduct', ['id' => $product->id]) }}" enctype='multipart/form-data'>
                 @csrf
                 @method('PUT')
                 <div class="inputss">
@@ -35,14 +36,18 @@
                         <input name="product_quantity" type="number" placeholder="product quantity" value="{{ $product->product_quantity }}" required>
                     </div>
                     <div class="column-div">
-                        <label for="price">product price</label>
-                        <input name="product_price" type="number" placeholder="product price" value="{{ $product->product_price }}" required>
+                        <label for="price">product retail price</label>
+                        <input name="product_price" type="number" placeholder="product retail price" value="{{ $product->product_price }}" required>
                     </div>
                 </div>
-                <div>
+                <div class="inputss">
+                    <div class="column-div">
+                        <label for="product_retailprice">product wholesale price</label>
+                        <input  name="product_retailprice" type="number" placeholder="product wholesale price" value="{{ $product->product_wholesaleprice }}" required>
+                    </div>
                     <div class="column-div">
                         <label for="product_type">product type</label>
-                        <select name="product_type" id="">
+                        <select style="width: 320px" name="product_type" id="">
                             @if( $product->product_type == 'vape')
                                 <option value="vape">VAPE</option>
                                 <option value="juice">JUICE</option>
@@ -59,6 +64,7 @@
                         </select>
                     </div>
                 </div>
+
                 <div>
                     <div class="column-div">
                         <label for="product_description">product description</label>

@@ -1,0 +1,106 @@
+
+.account-container {
+    display: flex;
+    padding: 50px 100px;
+    gap: 200px;
+}
+
+.my-account {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.my-account h3:nth-of-type(2), input {
+    border: 1px solid black;
+    padding: 7px 20px;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.editprofile, form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.editprofile a {
+    text-decoration: none;
+    color: white;
+    background-color:#363062 ;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* form button {
+    color: white;
+    background-color:#872341 ;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+} */
+
+h1 {
+    font-weight: 600;
+}
+
+.purchase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.purchase-box {
+    border: 3px solid #9094BE;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 700px;
+    min-height: 450px;
+    max-height: 600px;
+    overflow: auto;
+}
+
+.nav-box {
+    border-bottom: 1px solid black;
+}
+
+.purchase-box ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.purchase-box li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.purchase-item {
+    margin-top: 20px;
+}
+
+.item {
+    border: 2px solid #9094BE;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.item div {
+    display: flex;
+}
+
+.item div div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+
